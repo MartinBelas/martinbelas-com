@@ -2,6 +2,7 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Martin Belas - Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.png">
@@ -21,85 +22,126 @@
         <a href="https://www.linkedin.com/in/martinbelas/" target="_blank">LinkedIn profil</a>
     </p>
 
+    <div class="title-accent"></div>
+
+    <div class="lang-switch" role="tablist" aria-label="Jazyk / Language / Sprache">
+        <button class="lang-btn active" data-lang="cs" role="tab" aria-selected="true">
+            <img src="img/cz.png" class="flag-icon" alt=""> CZ
+        </button>
+        <button class="lang-btn" data-lang="en" role="tab" aria-selected="false">
+            <img src="img/en.png" class="flag-icon" alt=""> EN
+        </button>
+        <button class="lang-btn" data-lang="de" role="tab" aria-selected="false">
+            <img src="img/de.png" class="flag-icon" alt=""> DE
+        </button>
+    </div>
+
     <!-- Czech -->
-    <div class="lang-block">
-        <img src="img/cz.png" class="flag" alt="CZ">
-        <p>
-            Jsem full-stack vývojář zaměřený na backend, enterprise aplikace a moderní softwarové architektury.
-            Mám dlouhodobé zkušenosti s vývojem softwaru pro mezinárodní společnosti, kde jsem pracoval na integračních platformách,
-            workflow systémech a cloudových řešeních. Soustředím se na čistý kód, stabilní architekturu a dlouhodobě udržitelná řešení.
+    <div class="lang-block" data-lang="cs">
+        <div class="content-section">
+            <h3 class="section-label">O mně</h3>
+            <p>
+                Jsem full-stack vývojář zaměřený na backend, enterprise aplikace a moderní softwarové architektury.
+                Mám dlouhodobé zkušenosti s vývojem softwaru pro mezinárodní společnosti, kde jsem pracoval na integračních platformách,
+                workflow systémech a cloudových řešeních. Soustředím se na čistý kód, stabilní architekturu a dlouhodobě udržitelná řešení.
+            </p>
+        </div>
 
-            <br><br>
+        <div class="content-section">
+            <h3 class="section-label">Tech stack</h3>
+            <p>
+                Pracuji napříč celým stackem - Java, Spring, Quarkus, REST API, microservices, Docker, AWS, CI/CD, Kafka, Mongo, SQL/NoSQL -
+                a podle potřeby zasahuji i do front-endu (Angular, React, TypeScript). Mám zkušenosti s návrhem architektury,
+                DevOps procesy a automatizací.
+            </p>
+        </div>
 
-            Pracuji napříč celým stackem - Java, Spring, Quarkus, REST API, microservices, Docker, AWS, CI/CD, Kafka, Mongo, SQL/NoSQL -
-            a podle potřeby zasahuji i do front-endu (Angular, React, TypeScript). Mám zkušenosti s návrhem architektury,
-            DevOps procesy a automatizací.
+        <div class="content-section">
+            <h3 class="section-label">AI projekty</h3>
+            <p>
+                AI je oblast, která mě inspiruje. V poslední době experimentuji s AI nástroji a jejich praktickým využitím v menších projektech.
+                Jednu z ukázkových aplikací mám připravenou k nasazení - zatím je dostupná jen jako demo koncept:
+                <br><br>
+                <a href="https://ai-demo.martinbelas.com" target="_blank" class="cta-link">AI demo aplikace (preview)</a>.
 
-            <br><br>
+                <br><br>
 
-            AI je oblast, která mě inspiruje. V poslední době experimentuji s AI nástroji a jejich praktickým využitím v menších projektech.
-            Jednu z ukázkových aplikací mám připravenou k nasazení - zatím je dostupná jen jako demo koncept:
-            <a href="https://ai-demo.martinbelas.com" target="_blank">AI demo aplikace (preview)</a>.
-
-            <br><br>
-
-            Zdrojový kód je veřejně dostupný na GitHubu:
-            <a href="https://github.com/MartinBelas/ai-demo" target="_blank">GitHub - ai-demo</a>.
-        </p>
+                Zdrojový kód je veřejně dostupný na GitHubu:
+                <a href="https://github.com/MartinBelas/ai-demo" target="_blank">GitHub - ai-demo</a>.
+            </p>
+        </div>
     </div>
 
     <!-- English -->
-    <div class="lang-block">
-        <img src="img/en.png" class="flag" alt="EN">
-        <p>
-            I am a full-stack developer focused on backend engineering, enterprise applications, and modern software architecture.
-            I have long-term experience working for international companies on integration platforms, workflow systems,
-            and cloud-based solutions. I care about clean code, stable architecture, and long-term maintainability.
+    <div class="lang-block" data-lang="en" hidden>
+        <div class="content-section">
+            <h3 class="section-label">About me</h3>
+            <p>
+                I am a full-stack developer focused on backend engineering, enterprise applications, and modern software architecture.
+                I have long-term experience working for international companies on integration platforms, workflow systems,
+                and cloud-based solutions. I care about clean code, stable architecture, and long-term maintainability.
+            </p>
+        </div>
 
-            <br><br>
+        <div class="content-section">
+            <h3 class="section-label">Tech stack</h3>
+            <p>
+                I work across the entire stack - Java, Spring, Quarkus, REST API, microservices, Docker, AWS, CI/CD, Kafka, Mongo, SQL/NoSQL -
+                and I occasionally contribute to front-end development (Angular, React, TypeScript). I have experience with architecture design,
+                DevOps practices, and automation.
+            </p>
+        </div>
 
-            I work across the entire stack - Java, Spring, Quarkus, REST API, microservices, Docker, AWS, CI/CD, Kafka, Mongo, SQL/NoSQL -
-            and I occasionally contribute to front-end development (Angular, React, TypeScript). I have experience with architecture design,
-            DevOps practices, and automation.
+        <div class="content-section">
+            <h3 class="section-label">AI projects</h3>
+            <p>
+                AI is an area that inspires me. Recently, I have been experimenting with AI tools and exploring their practical use
+                in smaller projects. One of my demo applications is prepared for deployment - for now, it is available only as a preview concept:
+                <br><br>
+                <a href="https://ai-demo.martinbelas.com" target="_blank" class="cta-link">AI demo application (preview)</a>.
 
-            <br><br>
+                <br><br>
 
-            AI is an area that inspires me. Recently, I have been experimenting with AI tools and exploring their practical use
-            in smaller projects. One of my demo applications is prepared for deployment - for now, it is available only as a preview concept:
-            <a href="https://ai-demo.martinbelas.com" target="_blank">AI demo application (preview)</a>.
-
-            <br><br>
-
-            The source code is publicly available on GitHub:
-            <a href="https://github.com/MartinBelas/ai-demo" target="_blank">GitHub - ai-demo</a>.
-        </p>
+                The source code is publicly available on GitHub:
+                <a href="https://github.com/MartinBelas/ai-demo" target="_blank">GitHub - ai-demo</a>.
+            </p>
+        </div>
     </div>
 
     <!-- German -->
-    <div class="lang-block">
-        <img src="img/de.png" class="flag" alt="DE">
-        <p>
-            Ich bin ein Full-Stack-Entwickler mit Fokus auf Backend-Engineering, Enterprise-Anwendungen und moderne Softwarearchitektur.
-            Ich habe langfristige Erfahrung mit Integrationsplattformen, Workflow-Systemen und Cloud-Losungen.
-            Ich lege Wert auf sauberen Code, stabile Architektur und langfristige Wartbarkeit.
+    <div class="lang-block" data-lang="de" hidden>
+        <div class="content-section">
+            <h3 class="section-label">Über mich</h3>
+            <p>
+                Ich bin ein Full-Stack-Entwickler mit Fokus auf Backend-Engineering, Enterprise-Anwendungen und moderne Softwarearchitektur.
+                Ich habe langfristige Erfahrung mit Integrationsplattformen, Workflow-Systemen und Cloud-Losungen.
+                Ich lege Wert auf sauberen Code, stabile Architektur und langfristige Wartbarkeit.
+            </p>
+        </div>
 
-            <br><br>
+        <div class="content-section">
+            <h3 class="section-label">Tech-Stack</h3>
+            <p>
+                Ich arbeite im gesamten Stack - Java, Spring, Quarkus, REST API, Microservices, Docker, AWS, CI/CD, Kafka, Mongo, SQL/NoSQL -
+                und ubernehme bei Bedarf auch Aufgaben im Front-End (Angular, React, TypeScript). Ich habe Erfahrung in Architekturdesign,
+                DevOps-Prozessen und Automatisierung.
+            </p>
+        </div>
 
-            Ich arbeite im gesamten Stack - Java, Spring, Quarkus, REST API, Microservices, Docker, AWS, CI/CD, Kafka, Mongo, SQL/NoSQL -
-            und ubernehme bei Bedarf auch Aufgaben im Front-End (Angular, React, TypeScript). Ich habe Erfahrung in Architekturdesign,
-            DevOps-Prozessen und Automatisierung.
+        <div class="content-section">
+            <h3 class="section-label">KI-Projekte</h3>
+            <p>
+                KI ist ein Bereich, der mich inspiriert. In letzter Zeit experimentiere ich mit KI-Tools und deren praktischer Anwendung
+                in kleineren Projekten. Eine meiner Demo-Anwendungen ist bereits fur die Bereitstellung vorbereitet - derzeit nur als Vorschau verfugbar:
+                <br><br>
+                <a href="https://ai-demo.martinbelas.com" target="_blank" class="cta-link">KI-Demo-Anwendung (Vorschau)</a>.
 
-            <br><br>
+                <br><br>
 
-            KI ist ein Bereich, der mich inspiriert. In letzter Zeit experimentiere ich mit KI-Tools und deren praktischer Anwendung
-            in kleineren Projekten. Eine meiner Demo-Anwendungen ist bereits fur die Bereitstellung vorbereitet - derzeit nur als Vorschau verfugbar:
-            <a href="https://ai-demo.martinbelas.com" target="_blank">KI-Demo-Anwendung (Vorschau)</a>.
-
-            <br><br>
-
-            Der Quellcode ist offentlich auf GitHub verfugbar:
-            <a href="https://github.com/MartinBelas/ai-demo" target="_blank">GitHub - ai-demo</a>.
-        </p>
+                Der Quellcode ist offentlich auf GitHub verfugbar:
+                <a href="https://github.com/MartinBelas/ai-demo" target="_blank">GitHub - ai-demo</a>.
+            </p>
+        </div>
     </div>
 
 </div>

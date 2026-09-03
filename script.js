@@ -20,4 +20,30 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", newTheme);
         applyTheme(newTheme);
     });
+
+    const langButtons = document.querySelectorAll(".lang-btn");
+    const langBlocks = document.querySelectorAll(".lang-block");
+
+    function applyLang(lang) {
+        langBlocks.forEach(block => {
+            block.hidden = block.dataset.lang !== lang;
+        });
+        langButtons.forEach(btn => {
+            const isActive = btn.dataset.lang === lang;
+            btn.classList.toggle("active", isActive);
+            btn.setAttribute("aria-selected", String(isActive));
+        });
+        document.documentElement.lang = lang;
+    }
+
+    const savedLang = localStorage.getItem("lang") || "cs";
+    applyLang(savedLang);
+
+    langButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const lang = btn.dataset.lang;
+            localStorage.setItem("lang", lang);
+            applyLang(lang);
+        });
+    });
 });
