@@ -121,16 +121,16 @@ body.dark .title-accent {
 }
 
 .section-label {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #0077FF;
+    color: #366FAF;
     margin: 0 0 8px;
 }
 
 body.dark .section-label {
-    color: #4DA3FF;
+    color: #8BB8EB;
 }
 
 /* LinkedIn link */
